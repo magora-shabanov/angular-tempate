@@ -1,0 +1,16 @@
+main
+    alert
+    header
+        div
+            div.logo
+                a(routerLink="/")
+                    img(src="/assets/img/logo_black.svg")
+            nav.add-nav
+                a(*ngIf="authService.authenticated === true", (click)="logout()" href="javascript:void(0)")
+                    | Logout
+                a(*ngIf="authService.authenticated !== true" routerLink="/login")
+                    | Login
+    section.content
+        router-outlet
+    footer
+        span Angular 4 + WebPack

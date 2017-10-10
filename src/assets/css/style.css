@@ -1,0 +1,55 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: #eef1f6;
+}
+.loader-container {
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    position: absolute;
+    font-size: 21px;
+    margin-top: -100px;
+}
+
+.loader-container .loader {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    animation: animationFrames ease-out 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards; /*when the spec is finished*/
+}
+
+@keyframes animationFrames {
+    0% {
+        transform: scaleX(1.00) scaleY(1.00);
+    }
+    50% {
+        transform: scaleX(1.25) scaleY(1.25);
+    }
+    100% {
+        transform: scaleX(1.00) scaleY(1.00);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    background: lightgray;
+}
