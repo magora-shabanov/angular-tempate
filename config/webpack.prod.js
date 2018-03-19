@@ -192,8 +192,7 @@ module.exports = function (env) {
             comments: false,
             beautify: false,  // debug true
           }
-        },
-        warnings: true,
+        }
       }),
 
       /**

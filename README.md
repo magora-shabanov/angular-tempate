@@ -4,6 +4,13 @@ Developed by
 
 [![N|Solid](https://magora-systems.com/public-new/img/header/logo_black.svg)](https://magora-systems.com)
 
+# Main commands:
+
+ * npm run start:hmr - developers mode with enabled hot replace module
+ * npm run build - build static files (dev mode)
+ * npm run build:prod -production build
+ * npm run build:aot:prod - Ahead-of-Time (AOT) compilation for production build 
+
 # Key Supports
 
   * Webpack 3
@@ -20,7 +27,8 @@ Developed by
 * Http service (some @TODO)
 * Auth guard (page "/about")
 
-# TODOs (need describe)
-* 
+# TODOs 
+- [ ] Check webpack config (update modules + find more effective pkugins)
+
 
     
