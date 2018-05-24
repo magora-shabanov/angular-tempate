@@ -1,3 +1,5 @@
+## DEPRECATED REPOSITORY
+@see https://github.com/magora-shabanov/ng6
 # Angular + Webpack Template
 
 Developed by 
